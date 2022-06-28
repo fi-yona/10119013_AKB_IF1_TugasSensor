@@ -71,5 +71,5 @@
         android:textStyle="bold"
         android:viewportWidth="160"
         android:viewportHeight="33"
-        app:cornerRadius="10px"/>
+        app:cornerRadius="10px" />
 </RelativeLayout>
