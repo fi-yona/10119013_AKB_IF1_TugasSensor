@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="right"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="268dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:clipToOutline="true"
+        app:srcCompat="@drawable/splash_screen_image" />
+
+    <TextView
+        android:id="@+id/judul_tugas"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="30dp"
+        android:text="TUGAS AKB\nTUGAS SENSOR"
+        android:textColor="#831CB4"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/identity_splash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="17sp"
+        android:text="By Fiona Avila Putri\n10119013"
+        android:textColor="#CB156A"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_mulai"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:width="160dp"
+        android:height="33dp"
+        android:backgroundTint="#F6BFC9"
+        android:elevation="10dp"
+        android:strokeWidth="5"
+        android:strokeColor="#47000000"
+        android:text="MULAI"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#831CB4"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:viewportWidth="160"
+        android:viewportHeight="33"
+        app:cornerRadius="10px"/>
+</RelativeLayout>
