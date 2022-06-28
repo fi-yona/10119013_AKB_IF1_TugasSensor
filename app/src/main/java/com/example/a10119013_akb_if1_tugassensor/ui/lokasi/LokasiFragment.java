@@ -1,4 +1,4 @@
-package com.example.a10119013_akb_if1_tugassensor.ui.slideshow;
+package com.example.a10119013_akb_if1_tugassensor.ui.lokasi;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.a10119013_akb_if1_tugassensor.databinding.FragmentSlideshowBinding;
+import com.example.a10119013_akb_if1_tugassensor.databinding.FragmentLokasiBinding;
 
-public class SlideshowFragment extends Fragment {
+public class LokasiFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentLokasiBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        LokasiViewModel lokasiViewModel =
+                new ViewModelProvider(this).get(LokasiViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentLokasiBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        lokasiViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_baseline_restaurant_24"
             android:title="Restoran Favorit Terdekat" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_lokasi"
             android:icon="@drawable/ic_baseline_location_on_24"
             android:title="Lokasi Saat Ini" />
         <item
