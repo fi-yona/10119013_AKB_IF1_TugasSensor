@@ -15,5 +15,15 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
+        //inisialisasi
+        button_mulai = findViewById(R.id.button_mulai);
+
+        button_mulai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(SplashScreenActivity.this, MenuActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
