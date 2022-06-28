@@ -1,14 +1,14 @@
-package com.example.a10119013_akb_if1_tugassensor.ui.gallery;
+package com.example.a10119013_akb_if1_tugassensor.ui.restoran;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class RestoranViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public RestoranViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }

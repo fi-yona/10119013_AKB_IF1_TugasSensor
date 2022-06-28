@@ -1,4 +1,4 @@
-package com.example.a10119013_akb_if1_tugassensor.ui.gallery;
+package com.example.a10119013_akb_if1_tugassensor.ui.restoran;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.a10119013_akb_if1_tugassensor.databinding.FragmentGalleryBinding;
+import com.example.a10119013_akb_if1_tugassensor.databinding.FragmentRestoranBinding;
 
-public class GalleryFragment extends Fragment {
+public class RestoranFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentRestoranBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        RestoranViewModel restoranViewModel =
+                new ViewModelProvider(this).get(RestoranViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentRestoranBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        restoranViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
