@@ -24,8 +24,7 @@ public class RestoranFragment extends Fragment {
         binding = FragmentRestoranBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        restoranViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
 
