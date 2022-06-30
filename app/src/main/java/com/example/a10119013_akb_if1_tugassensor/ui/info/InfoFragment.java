@@ -1,23 +1,23 @@
 package com.example.a10119013_akb_if1_tugassensor.ui.info;
 
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.a10119013_akb_if1_tugassensor.R;
-import com.example.a10119013_akb_if1_tugassensor.databinding.FragmentInfoBinding;
 import com.google.android.material.tabs.TabLayout;
+
+//NIM   : 10119013
+//NAMA  : FIONA AVILA PUTRI
+//KELAS : IF-1
 
 public class InfoFragment extends Fragment {
 
@@ -39,10 +39,9 @@ public class InfoFragment extends Fragment {
         infoViewPagerAdapter.addFragment(new VersiViewPagerFragment(), "Versi");
         infoViewPagerAdapter.addFragment(new MadeByViewPagerFragment(), "Made by");
         viewPager.setAdapter(infoViewPagerAdapter);
-
         return view;
-
     }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
