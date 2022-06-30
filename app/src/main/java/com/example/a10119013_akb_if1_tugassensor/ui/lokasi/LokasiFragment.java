@@ -36,11 +36,11 @@ public class LokasiFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_lokasi, container, false);
         client = LocationServices.getFusedLocationProviderClient(getActivity());
         mMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
-        getCurrentLocation();
+        getLokasiSaatIni();
         return view;
     }
 
-    private void getCurrentLocation() {
+    private void getLokasiSaatIni() {
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                 && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
